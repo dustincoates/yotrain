@@ -27,7 +27,9 @@ parsed.css("service subway line").each do |line|
     name = line.css("name").inner_text
     unless API_KEYS[name].nil?
       API_KEYS[name].each do |key|
-        Net::HTTP::post_form(uri, {api_token: key})
+        res = Net::HTTP::post_form(uri, {api_token: key})
+        puts res.body
+
         # Yeah, yeah, I know
         sleep(60)
       end
