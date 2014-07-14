@@ -1,5 +1,6 @@
 require 'nokogiri'
 require 'uri'
+require 'net/http'
 
 OKAY_STATUSES = ["GOOD SERVICE", "SANDY REROUTE"]
 
