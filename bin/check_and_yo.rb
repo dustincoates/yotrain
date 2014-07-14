@@ -1,4 +1,5 @@
 require 'nokogiri'
+require 'uri'
 
 OKAY_STATUSES = ["GOOD SERVICE", "SANDY REROUTE"]
 
